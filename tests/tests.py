@@ -7,7 +7,7 @@ from unittest.mock import ANY
 import docker
 import pytest
 
-from http_backuper import job
+from http_backuper.backuper import job
 from http_backuper.models import BackupSection, Source, Frequency, HttpMethod, GeneralSection
 
 
