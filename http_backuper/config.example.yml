@@ -1,0 +1,47 @@
+general:
+  url: https://my-backup-server.com
+  http_verb: POST
+  file_field_name: file
+  healthchecks_io_api_key: my-healthchecks-io-api-key
+  requests_properties:
+    headers:
+      X-Api-Key: backup-server-api-key
+backups:
+  - name: local_hosts
+    schedule: minutes
+    sources:
+      - path: /etc/hosts
+        name: hosts
+
+  - name: local_apt
+    schedule: minutes
+    sources:
+      - path: /etc/apt
+        name: apt
+
+  - name: docker_hosts
+    schedule: minutes
+    sources:
+      - path: /etc/hosts
+        name: hosts
+        container_name: my-alpine-for-test
+
+  - name: docker_apt
+    schedule: minutes
+    sources:
+      - path: /etc/apt
+        name: hosts
+        container: my-alpine-for-test
+
+  - name: local_cmd
+    schedule: minutes
+    sources:
+      - command: echo "hello world"
+        name: local_cmd
+
+  - name: docker_cmd
+    schedule: minutes
+    sources:
+      - command: echo "hello world"
+        name: hosts
+        container_name: my-alpine-for-test

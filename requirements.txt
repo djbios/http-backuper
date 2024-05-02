@@ -1,0 +1,9 @@
+pydantic<2
+requests
+docker
+schedule
+PyYAML
+pytest
+pytest-mock
+requests-mock
+healthchecks-io
