@@ -1,5 +1,7 @@
 # HttpBackuper
 [![PyPI version](https://badge.fury.io/py/http-backuper.svg)](https://badge.fury.io/py/http-backuper)
+![CI/CD](https://github.com/djbios/http-backuper/actions/workflows/flake.yml/badge.svg)
+
 
 **HttpBackuper** is a Docker-based backup solution that automates the backup process of Docker containers and local paths.
 It is designed to be flexible and easy to use, supporting different backup sources and configurations.
