@@ -34,7 +34,7 @@ pip install http_backuper
 Or directly from the source:
 
 ```bash
-git clone https://github.com/yourusername/http_backuper.git
+git clone https://github.com/djbios/http_backuper.git
 cd http_backuper
 python setup.py install
 ```
